@@ -1,9 +1,9 @@
 package RestfulnessApplication
 
 import (
+	"github.com/go-restfulness-io/RestfulnessApplication/Service"
 	"net/http"
 	"os"
-	Service "test1/service"
 )
 
 func StartApplication() {
