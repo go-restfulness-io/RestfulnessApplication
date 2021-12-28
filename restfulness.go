@@ -1,7 +1,6 @@
 package restfulnessapplication
 
 import (
-	"github.com/go-restfulness-io/RestfulnessApplication/Service"
 	"net/http"
 	"os"
 )
