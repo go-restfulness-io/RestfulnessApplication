@@ -1,3 +1,3 @@
-module github.com/go-restfulness-io/RestfulnessApplication/Service
+module github.com/go-restfulness-io/restfulnessapplication/service
 
 go 1.18

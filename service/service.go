@@ -1,4 +1,4 @@
-package Service
+package service
 
 type Stage uint64
 

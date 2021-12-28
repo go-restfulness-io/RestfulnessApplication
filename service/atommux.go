@@ -1,4 +1,4 @@
-package Service
+package service
 
 type AtomMux struct {
 	handlerMap map[string]AtomHandler

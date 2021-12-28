@@ -1,4 +1,4 @@
-package RestfulnessApplication
+package restfulnessapplication
 
 import (
 	"fmt"
