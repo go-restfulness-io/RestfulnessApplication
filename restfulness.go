@@ -1,17 +1,18 @@
 package restfulnessapplication
 
 import (
+	"github.com/go-restfulness-io/restfulnessapplication/service"
 	"net/http"
 	"os"
 )
 
 func StartApplication() {
 	println("Starting Restfulness Application ...")
-	for atom, atomHandler := range Service.GetAtomRegistry() {
+	for atom, atomHandler := range service.GetAtomRegistry() {
 		println("Perform Mapping")
-		atom.SetStage(Service.MAPPING)
+		atom.SetStage(service.MAPPING)
 		println("Call Handler")
-		atomMapper := *Service.NewAtomMapper(atom, atomHandler)
+		atomMapper := *service.NewAtomMapper(atom, atomHandler)
 		atomHandler.DoMapping(&atomMapper)
 		//atomHandler.AtomHandler(&atom, new(Service.Request))
 	}
